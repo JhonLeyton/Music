@@ -1,11 +1,224 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Music Playground">
+
+<section class="hero">
+
+<div class="badge">
+⚡ Vive la experiencia
+</div>
+
+<h1>
+Generative Music Playground
+</h1>
+
+<p>
+Explora el universo de la música generativa mediante
+live coding, síntesis musical y patrones algorítmicos
+interactivos usando Astro.js y Strudel.
+</p>
+
+<div class="hero-buttons">
+
+<a href="/ritmo" class="btn">
+Comenzar →
+</a>
+
+<a href="/melodia" class="btn-secondary">
+Explorar Música
+</a>
+
+</div>
+
+</section>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="icon">
+🥁
+</div>
+
+<h2>Ritmo</h2>
+
+<p>
+Construye beats electrónicos utilizando bombos,
+cajas y hi-hats mediante programación musical.
+</p>
+
+<a href="/ritmo" class="btn">
+Explorar Ritmo
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+🎹
+</div>
+
+<h2>Melodía</h2>
+
+<p>
+Genera secuencias musicales y melodías dinámicas
+mediante live coding interactivo.
+</p>
+
+<a href="/melodia" class="btn">
+Explorar Melodía
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+🎼
+</div>
+
+<h2>Armonía</h2>
+
+<p>
+Experimenta con acordes y capas sonoras para crear
+atmósferas musicales futuristas.
+</p>
+
+<a href="/armonia" class="btn">
+Explorar Armonía
+</a>
+
+</div>
+
+</div>
+
+<style>
+
+.hero{
+
+  text-align:center;
+
+  padding:8rem 1rem;
+}
+
+.badge{
+
+  display:inline-block;
+
+  margin-bottom:2rem;
+
+  padding:0.7rem 1.2rem;
+
+  border-radius:999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(34,211,238,0.18),
+      rgba(192,132,252,0.18)
+    );
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  color:#67e8f9;
+
+  font-weight:bold;
+
+  letter-spacing:2px;
+}
+
+.hero p{
+
+  max-width:850px;
+
+  margin:auto;
+
+  font-size:1.2rem;
+}
+
+.hero-buttons{
+
+  margin-top:2.5rem;
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:1rem;
+
+  flex-wrap:wrap;
+}
+
+.btn-secondary{
+
+  display:inline-block;
+
+  padding:1rem 1.6rem;
+
+  border-radius:16px;
+
+  text-decoration:none;
+
+  font-weight:700;
+
+  color:white;
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  transition:0.35s;
+
+  background:
+    rgba(255,255,255,0.05);
+}
+
+.btn-secondary:hover{
+
+  transform:translateY(-4px);
+
+  background:
+    rgba(255,255,255,0.1);
+}
+
+.grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+  gap:2rem;
+}
+
+.icon{
+
+  font-size:4rem;
+
+  margin-bottom:1rem;
+
+  animation:floatIcon 4s ease-in-out infinite;
+}
+
+@keyframes floatIcon{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
+</style>
+
 </Layout>

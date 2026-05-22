@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const concepto = {
+  nombre: '🥁 Ritmo',
+
+  descripcion:
+    'El ritmo organiza el tiempo musical y permite construir patrones repetitivos electrónicos.',
+
+  patron: `sound("bd sd hh sd")`,
+
+  notas: [
+    'bd = Bass Drum',
+    'sd = Snare Drum',
+    'hh = Hi-Hat',
+    'Beat electrónico repetitivo'
+  ]
+};
+---
+
+<Layout title={concepto.nombre}>
+
+<section class="top">
+
+<div>
+
+<h1>{concepto.nombre}</h1>
+
+<p>{concepto.descripcion}</p>
+
+</div>
+
+<div class="music-circle">
+🎧
+</div>
+
+</section>
+
+<div class="card">
+
+<h2>Patrón Musical</h2>
+
+<pre>
+<code>{concepto.patron}</code>
+</pre>
+
+<ul>
+  {concepto.notas.map((n) => (
+    <li>{n}</li>
+  ))}
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>⚡ Rhythm Live Editor</h2>
+
+<p>
+Prueba y modifica patrones rítmicos en tiempo real.
+</p>
+
+<iframe
+  src="https://strudel.cc/?embed=1"
+  style="width:100%; height:600px; border:none;"
+  allow="autoplay"
+  title="Rhythm Editor">
+</iframe>
+
+</div>
+
+<style>
+
+.top{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:2rem;
+
+  margin-bottom:3rem;
+
+  flex-wrap:wrap;
+}
+
+.music-circle{
+
+  width:140px;
+  height:140px;
+
+  border-radius:50%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:4rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(34,211,238,0.18),
+      rgba(192,132,252,0.18)
+    );
+
+  box-shadow:
+    0 0 40px rgba(34,211,238,0.25);
+
+  animation:pulse 3s infinite;
+}
+
+@keyframes pulse{
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.08);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+
+}
+
+</style>
+
+</Layout>
