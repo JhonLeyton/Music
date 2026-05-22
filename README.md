@@ -1,46 +1,81 @@
-# Astro Starter Kit: Basics
+# 🎵 Haciendo Musica Generativa
 
-```sh
-npm create astro@latest -- --template basics
+## 📌 Opción elegida
+
+Opción D — Playground de música generativa
+
+---
+
+## 🎯 ¿Por qué elegí esta opción?
+
+Elegí esta opción porque me interesa la música, el live coding y la interacción entre programación y sonido. Además, quería explorar cómo crear experiencias visuales y musicales modernas utilizando Astro.js y herramientas de música generativa como Strudel.
+
+---
+
+## 🚀 Tecnologías utilizadas
+
+- Astro.js
+- Strudel
+- HTML
+- CSS
+- JavaScript
+- Vercel
+
+---
+
+## 🌐 Sitio desplegado
+
+https://TU-LINK-VERCEL.vercel.app
+
+---
+
+## ⚙️ Cómo ejecutar el proyecto localmente
+
+### 1. Clonar repositorio
+
+```bash
+git clone https://github.com/TU-USUARIO/music-playground.git
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### 2. Entrar al proyecto
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+```bash
+cd music-playground
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+### 3. Instalar dependencias
 
-## 🧞 Commands
+```bash
+npm install
+```
 
-All commands are run from the root of the project, from a terminal:
+### 4. Ejecutar servidor local
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```bash
+npm run dev
+```
 
-## 👀 Want to learn more?
+### 5. Abrir navegador
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```txt
+http://localhost:4321
+```
+
+---
+
+## 🎼 Funcionalidades
+
+- Playground musical interactivo
+- Sección de ritmo
+- Sección de melodía
+- Sección de armonía
+- Integración con Strudel
+- Diseño futurista synthwave/cyberpunk
+- Sitio responsive
+- Despliegue en Vercel
+
+---
+
+## 👨‍💻 Autor
+
+Jhon Leyton
