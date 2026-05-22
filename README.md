@@ -34,7 +34,7 @@ music-git-main-jhonleytons-projects.vercel.app
 ### 1. Clonar repositorio
 
 ```bash
-git clone https://github.com/TU-USUARIO/music-playground.git
+git clone https://github.com/JhonLeyton/music-playground.git
 ```
 
 ### 2. Entrar al proyecto
@@ -76,6 +76,6 @@ http://localhost:4321
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 Jhon Leyton
